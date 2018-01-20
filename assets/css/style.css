@@ -3,6 +3,7 @@ body {
   font-size: 18px;
   line-height: 34px;
   color: #dbb261;
+  height: 100%;
   background: url("../images/woodbg.jpg");
 }
 
@@ -14,7 +15,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 960px;
+  min-height: 100%;
   margin: 0 auto;
   clear: both;
 }
@@ -54,6 +55,7 @@ h3 {
 
 #masthead {
   position: fixed;
+  top: 0;
   z-index: 99;
   width: 100%;
   margin: 0 0 30px;
@@ -107,6 +109,10 @@ footer {
   text-align: center;
   background: #666;
   border-top: 8px solid #4aaaa5;
+  height: 60px;
+  bottom: 0;
+  position: fixed;
+  width: 100%
 }
 
 /* sidebar */
@@ -144,6 +150,10 @@ h3,
 
 #main-container {
   padding-top: 130px;
+}
+
+#main-content {
+  padding: 0 25px;
 }
 
 .main-section {
